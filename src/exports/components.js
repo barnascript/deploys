@@ -13,3 +13,5 @@ export { default as Contact } from "../components/contact/Contact";
 export { default as Footer } from "../components/footer/Footer";
 export { default as Snippet } from "../components/snippet/Snippet";
 export { default as AboutContent } from "../components/aboutContent/AboutContent";
+export { default as Form } from "../components/form/Form";
+export { default as ContactPageBg } from "../components/contactPageBg/ContactPageBg";

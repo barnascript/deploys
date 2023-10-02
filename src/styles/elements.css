@@ -3,7 +3,8 @@ img {
 }
 
 input,
-button {
+button,
+textarea {
   border: none;
   outline: none;
 }
@@ -16,6 +17,14 @@ textarea {
   border-radius: 4px;
   padding-inline: 20px;
   border: 1px solid var(--ship-cove);
+}
+
+input {
+  height: 56px;
+}
+
+textarea {
+  padding: 20px;
 }
 
 input[type="checkbox"] {

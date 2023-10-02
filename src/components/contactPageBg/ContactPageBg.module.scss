@@ -1,0 +1,64 @@
+.wrapper {
+  background-color: var(--persian-blue);
+  height: 100vh;
+  .container {
+    background-image: url(../../assets/images/contactpage_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    height: 100%;
+    width: 100%;
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 41px;
+      height: 70px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+
+        li {
+          a {
+            color: white;
+          }
+        }
+      }
+
+      button {
+        background-color: var(--ultramarine);
+        padding-inline: 16px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        &:hover {
+          background-color: var(--powder-blue);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    .container {
+      .navigation {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .wrapper {
+    .container {
+      .navigation {
+        display: none;
+      }
+    }
+  }
+}

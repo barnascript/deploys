@@ -1,4 +1,4 @@
-import { Home, About } from "./exports/pages";
+import { Home, About, ContactPage } from "./exports/pages";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );

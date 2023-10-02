@@ -27,7 +27,7 @@ const Navbar = ({ bgColor, logo }) => {
                 <Link>Pricing</Link>
               </li>
               <li>
-                <Link>Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li>
                 <Link>Login</Link>
