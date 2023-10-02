@@ -1,4 +1,7 @@
 .wrapper_container {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   .wrapper {
     height: 80px;
 
