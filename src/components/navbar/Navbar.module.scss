@@ -1,0 +1,179 @@
+.wrapper_container {
+  .wrapper {
+    height: 80px;
+
+    .desktop_container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: inherit;
+      .navigation {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+        ul {
+          display: flex;
+          gap: 42px;
+          li {
+            a {
+              color: white;
+            }
+          }
+        }
+
+        button {
+          padding-top: 6px;
+          padding-bottom: 6px;
+          padding-inline: 16px;
+          background-color: var(--ultramarine);
+
+          &:hover {
+            background-color: var(--powder-blue);
+          }
+        }
+      }
+    }
+
+    .mobile_container {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper_container {
+    .wrapper {
+      height: 60px;
+
+      .desktop_container {
+        display: none;
+      }
+
+      .mobile_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: inherit;
+        position: relative;
+        z-index: 999;
+        .logo {
+          width: 8rem;
+        }
+        .hamburger,
+        .close_hamburger {
+          cursor: pointer;
+          color: white;
+        }
+
+        .close_hamburger {
+          transform: scale(1.8);
+          position: absolute;
+          right: 3px;
+        }
+
+        .mobile_navigation_hid {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 30px;
+          position: fixed;
+          top: 60px;
+          background-color: var(--light-blue);
+          width: 100vw;
+          height: 200vw;
+          margin-left: -20px;
+          transform: translateX(-100%);
+          transition: all 1s ease-in-out;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            li {
+              display: block;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 20px;
+              padding-left: 20px;
+              cursor: pointer;
+              width: 100%;
+
+              &:hover {
+                background-color: var(--semi-light-blue);
+              }
+              a {
+                color: var(--persian-blue);
+              }
+            }
+          }
+
+          button {
+            display: flex;
+            align-self: flex-start;
+            background-color: var(--ultramarine);
+            padding-top: 6px;
+            padding-bottom: 6px;
+            width: 10rem;
+            margin-left: 20px;
+
+            &:hover {
+              background-color: var(--powder-blue);
+            }
+          }
+        }
+        .mobile_navigation_shown {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 30px;
+          position: fixed;
+          top: 60px;
+          background-color: var(--light-blue);
+          width: 100vw;
+          height: 200vw;
+          margin-left: -20px;
+          transform: translateX(0%);
+          transition: all 0.5s ease-in-out;
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            li {
+              display: block;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-right: 20px;
+              padding-left: 20px;
+              cursor: pointer;
+              width: 100%;
+
+              &:hover {
+                background-color: var(--semi-light-blue);
+              }
+              a {
+                color: var(--persian-blue);
+              }
+            }
+          }
+
+          button {
+            display: flex;
+            align-self: flex-start;
+            background-color: var(--ultramarine);
+            padding-top: 6px;
+            padding-bottom: 6px;
+            width: 10rem;
+            margin-left: 20px;
+
+            &:hover {
+              background-color: var(--powder-blue);
+            }
+          }
+        }
+      }
+    }
+  }
+}

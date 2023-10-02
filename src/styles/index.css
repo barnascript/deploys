@@ -1,0 +1,30 @@
+:root {
+  --green: #38a564;
+  --light-blue: #181453;
+  --dark-blue: #100d36;
+  --light-brown: #f2eee8;
+  --light-blue: #f4f7fa;
+  --ultramarine: #3e71ef;
+  --powder-blue: #2253ff;
+  --ship-cove: #828aa5;
+  --persian-blue: #003bcc;
+  --semi-light-blue: #c1cff5;
+  --input-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans";
+}
+
+.sw {
+  max-width: 1280px;
+  padding-inline: 20px;
+  margin: auto;
+}

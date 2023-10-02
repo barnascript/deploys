@@ -1,0 +1,120 @@
+.wrapper {
+  padding-top: 131px;
+  padding-bottom: 70px;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    gap: 211px;
+    width: 100%;
+
+    img {
+      width: 120px;
+    }
+
+    .all_links {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 40px;
+      width: 100%;
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        grid-column: span 3;
+        gap: 16px;
+
+        .title {
+          font-weight: 800;
+          padding-bottom: 17px;
+        }
+
+        .images {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          img {
+            width: 10px;
+          }
+        }
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    padding-top: 81px;
+    padding-bottom: 70px;
+    .container {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      color: white;
+      gap: 51px;
+      width: 100%;
+
+      .all_links {
+        grid-gap: 20px;
+
+        .links {
+          grid-column: span 12;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .wrapper {
+    padding-top: 81px;
+    padding-bottom: 70px;
+    .container {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      color: white;
+      gap: 100px;
+      width: 100%;
+
+      .all_links {
+        grid-gap: 20px;
+
+        .links {
+          grid-column: span 4;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .wrapper {
+    padding-top: 81px;
+    padding-bottom: 70px;
+    .container {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      color: white;
+      gap: 211px;
+      width: 100%;
+
+      .all_links {
+        grid-gap: 30px;
+
+        .links {
+          grid-column: span 3;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}

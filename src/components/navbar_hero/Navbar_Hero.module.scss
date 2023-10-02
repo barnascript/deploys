@@ -1,0 +1,23 @@
+.navbar_hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-origin: border-box;
+  height: 100vh;
+
+  .bg_image {
+    position: absolute;
+    margin-top: 80px;
+    height: 900px;
+    width: 100%;
+    top: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}

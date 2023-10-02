@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 8px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 0px;
+    text-align: center;
+  }
+}

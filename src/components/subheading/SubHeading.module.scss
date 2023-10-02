@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: auto;
+  gap: 8px;
+  text-align: center;
+
+  h2 {
+    max-width: 70%;
+  }
+
+  p {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 100%;
+    h2 {
+      line-height: 40px;
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .wrapper {
+    h2 {
+      line-height: 40px;
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 90%;
+    }
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .wrapper {
+    h2 {
+      line-height: 40px;
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 70%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+export { default as Navbar } from "../components/navbar/Navbar";
+export { default as Hero } from "../components/hero/Hero";
+export { default as NavbarHero } from "../components/navbar_hero/NavbarHero";
+export { default as SubHeading } from "../components/subheading/SubHeading";
+export { default as Companies } from "../components/companies/Companies";
+export { default as Clients } from "../components/clients/Clients";
+export { default as ClientCard } from "../components/clientCard/ClientCard";
+export { default as Features } from "../components/features/Features";
+export { default as Feature } from "../components/feature/Feature";
+export { default as Description } from "../components/description/Description";
+export { default as Input } from "../components/input/Input";
+export { default as Contact } from "../components/contact/Contact";
+export { default as Footer } from "../components/footer/Footer";
+export { default as Snippet } from "../components/snippet/Snippet";
