@@ -16,3 +16,6 @@ export { default as software } from "../assets/images/software.png";
 export { default as facebook } from "../assets/icons/facebook.svg";
 export { default as instagram } from "../assets/icons/instagram.svg";
 export { default as twitter } from "../assets/icons/twitter.svg";
+export { default as about_bg } from "../assets/images/about_bg.png";
+export { default as mission } from "../assets/images/mission.png";
+export { default as vision } from "../assets/images/vision.png";

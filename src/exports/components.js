@@ -12,3 +12,4 @@ export { default as Input } from "../components/input/Input";
 export { default as Contact } from "../components/contact/Contact";
 export { default as Footer } from "../components/footer/Footer";
 export { default as Snippet } from "../components/snippet/Snippet";
+export { default as AboutContent } from "../components/aboutContent/AboutContent";

@@ -1,10 +1,14 @@
-.wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 32px;
-  color: white;
-  padding-top: 99px;
-  padding-bottom: 132px;
+.wrapper_container {
+  background-color: var(--persian-blue);
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    color: white;
+    padding-top: 99px;
+    padding-bottom: 132px;
+    background-color: var(--persian-blue);
+  }
 }

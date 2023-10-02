@@ -4,7 +4,7 @@ import { logo } from "../../exports/icons";
 import { bg } from "../../exports/images";
 import styles from "./Navbar_Hero.module.scss";
 
-const NavbarHero = ({ bgColor, bgDesktop, bgMobile }) => {
+const NavbarHero = ({ bgColor, bgDesktop, bgMobile, title, text }) => {
   // State to store the current window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -36,7 +36,7 @@ const NavbarHero = ({ bgColor, bgDesktop, bgMobile }) => {
         <Navbar bgColor={"var(--persian-blue)"} logo={logo} />
       </div>
       <div className={styles.hero}>
-        <Hero bgImage={bgImage} />
+        <Hero bgImage={bgImage} title={title} text={text} />
       </div>
     </div>
   );

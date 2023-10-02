@@ -18,7 +18,7 @@ const Navbar = ({ bgColor, logo }) => {
           <div className={styles.navigation}>
             <ul>
               <li>
-                <Link>About</Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
                 <Link>Features</Link>

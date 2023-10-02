@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 import { Input } from "../../exports/components";
 
-const Hero = ({ bgColor, bgImage }) => {
+const Hero = ({ bgColor, bgImage, title, text }) => {
   return (
     <div
       className={styles.wrapper}
@@ -9,12 +9,8 @@ const Hero = ({ bgColor, bgImage }) => {
     >
       <div className={`sw ${styles.container}`}>
         <div className={styles.hero_text}>
-          <h1>Build, Manage & Deploy Products – Faster.</h1>
-          <p>
-            Deployn helps founders, project managers, and developers to build
-            faster, access dev tools, and manage their tech infastructure via
-            one simple integration.
-          </p>
+          <h1>{title}</h1>
+          <p>{text}</p>
         </div>
         <Input />
       </div>
