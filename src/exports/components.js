@@ -24,3 +24,4 @@ export { default as EmailInput } from "../components/emailInput/EmailInput";
 export { default as PasswordInput } from "../components/passwordInput/PasswordInput";
 export { default as Button } from "../components/button/Button";
 export { default as AuthOptionsFooter } from "../components/authOptionsFooter/AuthOptionsFooter";
+export { default as PriceCard } from "../components/priceCard/PriceCard";

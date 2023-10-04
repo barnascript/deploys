@@ -21,3 +21,7 @@ export { default as mission } from "../assets/images/mission.png";
 export { default as vision } from "../assets/images/vision.png";
 export { default as contactpage_bg } from "../assets/images/contactpage_bg.png";
 export { default as contact_logo } from "../assets/images/contact_logo.png";
+export { default as observatory } from "../assets/images/observatory.png";
+export { default as astronomy } from "../assets/images/astronomy.png";
+export { default as planet } from "../assets/images/planet.png";
+export { default as round_checkmark } from "../assets/images/round_checkmark.png";

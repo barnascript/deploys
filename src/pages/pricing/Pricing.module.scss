@@ -10,4 +10,83 @@
     background-size: cover;
     background-origin: border-box;
   }
+
+  .pricecards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 37px;
+
+    .pricecard {
+      grid-column: span 4;
+    }
+  }
+
+  .footer,
+  .snippet {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .wrapper {
+    gap: 80px;
+    .pricecards {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+
+      .pricecard {
+        grid-column: span 12;
+      }
+    }
+
+    .footer,
+    .snippet {
+      margin-top: -100px;
+    }
+  }
+}
+
+@media screen and (min-width: 301px) {
+  .wrapper {
+    gap: 80px;
+    .pricecards {
+      gap: 10px;
+
+      .pricecard {
+        grid-column: span 12;
+      }
+    }
+
+    .footer,
+    .snippet {
+      margin-top: -100px;
+    }
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .wrapper {
+    gap: 80px;
+    .pricecards {
+      gap: 27px;
+
+      .pricecard {
+        grid-column: span 6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .wrapper {
+    gap: 80px;
+    .pricecards {
+      gap: 37px;
+
+      .pricecard {
+        grid-column: span 4;
+      }
+    }
+  }
 }
