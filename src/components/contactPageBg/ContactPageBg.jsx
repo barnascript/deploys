@@ -6,7 +6,7 @@ const ContactPageBg = () => {
     <div className={styles.wrapper}>
       <div className={`sw ${styles.container}`}>
         {" "}
-        <div className={styles.navigation}>
+        {/* <div className={styles.navigation}>
           <ul>
             <li>
               <Link to="/about">About</Link>
@@ -25,7 +25,7 @@ const ContactPageBg = () => {
             </li>
           </ul>
           <button>Sign up</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

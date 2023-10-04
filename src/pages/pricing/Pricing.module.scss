@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: 100vh;
+
+  .hero {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-origin: border-box;
+  }
+}

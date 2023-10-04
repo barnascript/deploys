@@ -1,5 +1,5 @@
-import { SubHeading } from "../../exports/components";
-import { captcha } from "../../exports/icons";
+import { Captcha, TextInput } from "../../exports/components";
+
 import styles from "./Form.module.scss";
 
 const Form = () => {
@@ -14,15 +14,16 @@ const Form = () => {
           </p>
         </div>
         <form>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
+          <div>
+            <TextInput placeholder={"First Name"} />
+          </div>
+          <div>
+            <TextInput placeholder={"Last Name"} />
+          </div>
           <textarea rows="3" placeholder="Message"></textarea>
           <button>Send Message</button>
         </form>
-        <div className={styles.captcha}>
-          <img src={captcha} alt="captcha" />
-          <p>This page is protected by Google reCAPTCHA</p>
-        </div>
+        <Captcha />
       </div>
     </div>
   );

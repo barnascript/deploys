@@ -21,6 +21,15 @@ textarea {
 
 input {
   height: 56px;
+  width: 100%;
+}
+
+input:focus:invalid {
+  border: 1px solid red;
+}
+
+input:focus:valid {
+  border: 1px solid var(--green);
 }
 
 textarea {

@@ -7,6 +7,7 @@
   margin: auto;
   margin-right: 0;
   height: 100%;
+  padding-top: 100px;
   .container {
     display: flex;
     flex-direction: column;
@@ -25,13 +26,11 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-    }
 
-    .captcha {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
+      div {
+        margin-right: -10px;
+        margin-left: -10px;
+      }
     }
   }
 }

@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 import { Input } from "../../exports/components";
 
-const Hero = ({ bgColor, bgImage, title, text }) => {
+const Hero = ({ bgColor, bgImage, title, text, displayInput }) => {
   return (
     <div
       className={styles.wrapper}
@@ -12,7 +12,9 @@ const Hero = ({ bgColor, bgImage, title, text }) => {
           <h1>{title}</h1>
           <p>{text}</p>
         </div>
-        <Input />
+        <div style={{ display: displayInput }}>
+          <Input />
+        </div>
       </div>
     </div>
   );

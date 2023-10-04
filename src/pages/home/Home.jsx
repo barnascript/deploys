@@ -17,7 +17,7 @@ const Home = () => {
         <NavbarHero
           bgDesktop={`url(${bg})`}
           bgMobile={`url(${mobile_bg})`}
-          bgColor={"var(--persian-blue"}
+          bgColor={"var(--persian-blue)"}
           title="Build, Manage & Deploy Products – Faster."
           text="Deployn helps founders, project managers, and developers to build
           faster, access dev tools, and manage their tech infastructure via

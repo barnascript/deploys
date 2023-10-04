@@ -7,3 +7,4 @@ export { default as lifebank } from "../assets/icons/Rectangle-5.svg";
 export { default as dsn } from "../assets/icons/Rectangle-6.svg";
 export { default as civichive } from "../assets/icons/Rectangle-7.svg";
 export { default as captcha } from "../assets/icons/captcha.svg";
+export { default as google } from "../assets/icons/google.svg";

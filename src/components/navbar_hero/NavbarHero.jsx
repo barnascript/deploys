@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { Navbar, Hero } from "../../exports/components";
 import { logo } from "../../exports/icons";
-import { bg } from "../../exports/images";
 import styles from "./Navbar_Hero.module.scss";
 
-const NavbarHero = ({ bgColor, bgDesktop, bgMobile, title, text }) => {
+const NavbarHero = ({
+  bgColor,
+  bgDesktop,
+  bgMobile,
+  title,
+  text,
+  DesktopBgColor,
+  MobileBgColor,
+}) => {
   // State to store the current window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -33,7 +40,12 @@ const NavbarHero = ({ bgColor, bgDesktop, bgMobile, title, text }) => {
       className={styles.navbar_hero}
     >
       <div>
-        <Navbar bgColor={"var(--persian-blue)"} logo={logo} />
+        <Navbar
+          logo={logo}
+          hamburgerColor={"#fff"}
+          DesktopBgColor={"var(--persian-blue)"}
+          MobileBgColor={"var(--persian-blue)"}
+        />
       </div>
       <div className={styles.hero}>
         <Hero bgImage={bgImage} title={title} text={text} />

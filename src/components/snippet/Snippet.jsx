@@ -1,9 +1,15 @@
 import styles from "./Snippet.module.scss";
 
-const Snippet = () => {
+const Snippet = ({ bgColor, justifyContent, color }) => {
   return (
-    <div className={styles.wrapper_container}>
-      <div className={`sw ${styles.wrapper}`}>
+    <div
+      className={styles.wrapper_container}
+      style={{ backgroundColor: bgColor }}
+    >
+      <div
+        className={`sw ${styles.wrapper}`}
+        style={{ justifyContent: justifyContent, color: color }}
+      >
         <p>© 2020 Deployn.com. All rights reserved.</p>
         <div className={styles.rights}>
           <p>Terms of Service</p>

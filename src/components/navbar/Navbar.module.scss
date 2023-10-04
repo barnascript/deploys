@@ -1,15 +1,21 @@
 .wrapper_container {
   position: fixed;
   width: 100%;
+  height: auto;
   z-index: 1000;
+
   .wrapper {
-    height: 80px;
+    height: 100px;
 
     .desktop_container {
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: inherit;
+
+      .logo {
+        cursor: pointer;
+      }
       .navigation {
         display: flex;
         align-items: center;
@@ -61,17 +67,18 @@
         z-index: 999;
         .logo {
           width: 8rem;
+          cursor: pointer;
         }
         .hamburger,
         .close_hamburger {
           cursor: pointer;
-          color: white;
+          transform: scale(1.8);
         }
 
         .close_hamburger {
           transform: scale(1.8);
           position: absolute;
-          right: 3px;
+          right: 0px;
         }
 
         .mobile_navigation_hid {

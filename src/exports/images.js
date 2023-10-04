@@ -20,3 +20,4 @@ export { default as about_bg } from "../assets/images/about_bg.png";
 export { default as mission } from "../assets/images/mission.png";
 export { default as vision } from "../assets/images/vision.png";
 export { default as contactpage_bg } from "../assets/images/contactpage_bg.png";
+export { default as contact_logo } from "../assets/images/contact_logo.png";

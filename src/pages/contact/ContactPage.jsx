@@ -1,9 +1,15 @@
-import { ContactPageBg, Form } from "../../exports/components";
+import { ContactPageBg, Form, Navbar } from "../../exports/components";
 import styles from "./Contact.module.scss";
+import { contact_logo } from "../../exports/images";
 
 const Contact = () => {
   return (
     <div className={styles.wrapper}>
+      <Navbar
+        logo={contact_logo}
+        hamburgerColor={"#000000"}
+        MobileBgColor="white"
+      />
       <div className={styles.form}>
         <Form />
       </div>
