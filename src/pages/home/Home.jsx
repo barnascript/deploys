@@ -13,7 +13,7 @@ import { bg, mobile_bg } from "../../exports/images";
 const Home = () => {
   return (
     <div className={styles.wrapper}>
-      <div>
+      <div className={styles.navbar_hero}>
         <NavbarHero
           bgDesktop={`url(${bg})`}
           bgColor={"var(--persian-blue)"}
@@ -23,7 +23,9 @@ const Home = () => {
           one simple integration."
         />
       </div>
-      <Companies />
+      <div className={styles.companies}>
+        <Companies />
+      </div>
       <Clients />
       <div className={styles.features}>
         <Features />
