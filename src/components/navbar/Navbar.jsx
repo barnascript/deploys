@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.scss";
 import { hamburger } from "../../exports/icons";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LiaTimesSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -34,6 +34,10 @@ const Navbar = ({
   // Determine which background image to use based on window width
   const NavbarBg = windowWidth <= 850 ? MobileBgColor : DesktopBgColor;
 
+  const activeLinkColor = {
+    backgroundColor: "red",
+  };
+
   return (
     <div
       className={styles.wrapper_container}
@@ -57,9 +61,14 @@ const Navbar = ({
                 <Link style={{ color: linkColor }}>Features</Link>
               </li>
               <li>
-                <Link style={{ color: linkColor }} to="/pricing">
+                <NavLink
+                  style={({ isActive }) => ({
+                    color: isActive ? activeLinkColor : linkColor,
+                  })}
+                  to="/pricing"
+                >
                   Pricing
-                </Link>
+                </NavLink>
               </li>
               <li>
                 <Link to="/contact" style={{ color: linkColor }}>
