@@ -22,9 +22,15 @@ const About = () => {
       <div>
         <AboutContent />
       </div>
-      <Contact />
-      <Footer />
-      <Snippet />
+      <div className={styles.contact}>
+        <Contact />
+      </div>
+      <div className={styles.footer}>
+        <Footer />
+      </div>
+      <div className={styles.snippet}>
+        <Snippet />
+      </div>
     </div>
   );
 };

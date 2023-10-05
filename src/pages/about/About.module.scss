@@ -2,4 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
+
+  .contact,
+  .footer,
+  .snippet {
+    margin-top: -100px;
+  }
 }

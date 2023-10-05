@@ -9,7 +9,7 @@ import {
 } from "../../exports/components";
 import styles from "./Pricing.module.scss";
 import { logo } from "../../exports/icons";
-import { about_bg, mobile_bg } from "../../exports/images";
+import { about_bg } from "../../exports/images";
 const Pricing = () => {
   return (
     <div className={styles.wrapper}>
@@ -31,7 +31,9 @@ const Pricing = () => {
           <PriceCard />
         </div>
       </div>
-      <Contact />
+      <div className={styles.contact}>
+        <Contact />
+      </div>
       <div className={styles.footer}>
         <Footer />
       </div>
