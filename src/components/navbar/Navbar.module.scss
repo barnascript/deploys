@@ -1,7 +1,7 @@
 .wrapper_container {
   position: fixed;
   width: 100%;
-  height: auto;
+  height: 80px;
   z-index: 1000;
 
   .wrapper {
@@ -11,7 +11,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      height: inherit;
+      height: 80px;
 
       .logo {
         cursor: pointer;

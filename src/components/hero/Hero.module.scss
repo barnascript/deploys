@@ -9,7 +9,8 @@
   background-position: center center;
   background-size: cover;
   background-origin: border-box;
-  height: 100%;
+  height: 775px;
+
   .container {
     display: flex;
     position: relative;
@@ -20,6 +21,7 @@
     padding-bottom: 226px;
     position: relative;
     z-index: 1;
+    max-width: 45%;
 
     .hero_text {
       display: flex;
@@ -85,24 +87,6 @@
       max-width: 100%;
       .hero_text {
         max-width: 90%;
-      }
-    }
-  }
-}
-@media screen and (min-width: 961px) {
-  .wrapper {
-    padding-top: 80px;
-    .container {
-      .hero_text {
-        max-width: 70%;
-
-        h1 {
-          font-size: 3.5rem;
-          line-height: 60px;
-        }
-        p {
-          max-width: 70%;
-        }
       }
     }
   }

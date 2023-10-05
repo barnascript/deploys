@@ -5,49 +5,64 @@ import { LiaTimesSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({
-  logo,
-  hamburgerColor,
-  MobileBgColor,
-  linkColor,
-  DesktopBgColor,
-}) => {
+const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
   const [toggleMenu, setToggleMenu] = useState(true);
-
-  // State to store the current window width
+  const [bgColor, setBgColor] = useState();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [logoColor, setLogoColor] = useState();
+  const [linkColor, setLinkColor] = useState();
 
-  // Function to update window width when the window resizes
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
+  // const handleResize = () => {
+  //   setWindowWidth(window.innerWidth);
+  // };
 
-  // Add an event listener for window resize
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   return () => {
+  //     // Cleanup: remove the event listener when the component unmounts
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
+
+  // const NavbarBg = windowWidth <= 850 ? MobileBgColor : DesktopBgColor;
+
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => {
-      // Cleanup: remove the event listener when the component unmounts
-      window.removeEventListener("resize", handleResize);
+    const handleScroll = () => {
+      const backgroundColor = window.scrollY > 50 ? "white" : "transparent";
+      const changeLogoColor =
+        window.scrollY > 50
+          ? "brightness(0) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)"
+          : "brightness(100%) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)";
+      const changeLinkColor = window.scrollY > 50 ? "black" : "white";
+      setBgColor(backgroundColor);
+      setLogoColor(changeLogoColor);
+      setLinkColor(changeLinkColor);
     };
-  }, []);
 
-  // Determine which background image to use based on window width
-  const NavbarBg = windowWidth <= 850 ? MobileBgColor : DesktopBgColor;
+    window.addEventListener("scroll", handleScroll);
 
-  const activeLinkColor = {
-    backgroundColor: "red",
-  };
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [bgColor, logoColor]);
 
   return (
     <div
       className={styles.wrapper_container}
-      style={{ backgroundColor: NavbarBg }}
+      style={{ backgroundColor: bgColor }}
     >
       <div className={`sw ${styles.wrapper}`}>
         <div className={styles.desktop_container}>
           <Link to="/">
             <div>
-              <img src={logo} alt="logo" className={styles.logo} />
+              <img
+                src={logo}
+                alt="logo"
+                className={styles.logo}
+                style={{
+                  filter: logoColor,
+                }}
+              />
             </div>
           </Link>
           <div className={styles.navigation}>
@@ -61,14 +76,9 @@ const Navbar = ({
                 <Link style={{ color: linkColor }}>Features</Link>
               </li>
               <li>
-                <NavLink
-                  style={({ isActive }) => ({
-                    color: isActive ? activeLinkColor : linkColor,
-                  })}
-                  to="/pricing"
-                >
+                <Link to="/pricing" style={{ color: linkColor }}>
                   Pricing
-                </NavLink>
+                </Link>
               </li>
               <li>
                 <Link to="/contact" style={{ color: linkColor }}>

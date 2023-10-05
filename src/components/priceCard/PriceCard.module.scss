@@ -1,7 +1,6 @@
 .wrapper {
   border-radius: 4px;
-  box-shadow: 0px 12.15561580657959px 16.830852508544922px 0px #608db740;
-
+  box-shadow: var(--card-shadow);
   .top {
     display: flex;
     flex-direction: column;

@@ -12,6 +12,7 @@
   --black-squeeze: #f4f7fa;
   --input-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --card-shadow: 0px 12.15561580657959px 16.830852508544922px 0px #608db740;
 }
 
 * {
