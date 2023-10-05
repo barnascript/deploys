@@ -82,7 +82,7 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      width: 80%;
+      width: 70%;
       margin: auto;
     }
 
@@ -92,7 +92,7 @@
   }
 }
 
-@media screen and (min-width: 878px) {
+@media screen and (min-width: 858px) {
   .wrapper {
     .auth {
       width: 45%;

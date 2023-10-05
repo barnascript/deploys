@@ -8,23 +8,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
   const [toggleMenu, setToggleMenu] = useState(true);
   const [bgColor, setBgColor] = useState();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [logoColor, setLogoColor] = useState();
   const [linkColor, setLinkColor] = useState();
-
-  // const handleResize = () => {
-  //   setWindowWidth(window.innerWidth);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", handleResize);
-  //   return () => {
-  //     // Cleanup: remove the event listener when the component unmounts
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-
-  // const NavbarBg = windowWidth <= 850 ? MobileBgColor : DesktopBgColor;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -106,14 +91,14 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
               alt="hamburger_menu"
               className={styles.hamburger}
               onClick={() => setToggleMenu(!toggleMenu)}
-              style={{ color: hamburgerColor }}
+              style={{ color: linkColor }}
             />
           )}
           {!toggleMenu && (
             <LiaTimesSolid
               className={styles.close_hamburger}
               onClick={() => setToggleMenu(!toggleMenu)}
-              style={{ color: hamburgerColor }}
+              style={{ color: linkColor }}
             />
           )}
           <div
