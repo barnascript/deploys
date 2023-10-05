@@ -1,6 +1,6 @@
 import { ContactPageBg, Form, Navbar } from "../../exports/components";
 import styles from "./Contact.module.scss";
-import { contact_logo } from "../../exports/images";
+import { contact_logo } from "../../exports/icons";
 
 const Contact = () => {
   return (

@@ -1,15 +1,18 @@
 import {
   Contact,
   Footer,
-  Hero,
-  Navbar,
   NavbarHero,
   PriceCard,
   Snippet,
 } from "../../exports/components";
 import styles from "./Pricing.module.scss";
-import { logo } from "../../exports/icons";
 import { about_bg } from "../../exports/images";
+import {
+  observatory,
+  earth,
+  astronomy,
+  round_checkmark,
+} from "../../exports/icons";
 const Pricing = () => {
   return (
     <div className={styles.wrapper}>
@@ -22,13 +25,13 @@ const Pricing = () => {
       </div>
       <div className={`sw ${styles.pricecards}`}>
         <div className={styles.pricecard}>
-          <PriceCard />
+          <PriceCard image={observatory} />
         </div>
         <div className={styles.pricecard}>
-          <PriceCard />
+          <PriceCard image={earth} />
         </div>
         <div className={styles.pricecard}>
-          <PriceCard />
+          <PriceCard image={astronomy} />
         </div>
       </div>
       <div className={styles.contact}>

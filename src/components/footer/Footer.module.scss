@@ -36,6 +36,11 @@
             align-items: center;
             gap: 24px;
 
+            .instagram,
+            .twitter {
+              width: 20px;
+            }
+
             img {
               width: 10px;
             }

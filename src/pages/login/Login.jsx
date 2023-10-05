@@ -9,7 +9,7 @@ import {
   Snippet,
   CompanyComponent,
 } from "../../exports/components";
-import { contact_logo } from "../../exports/images";
+import { contact_logo } from "../../exports/icons";
 import { Link } from "react-router-dom";
 
 const Login = () => {

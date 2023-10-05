@@ -7,7 +7,7 @@ import {
   ngo,
   startups,
   government,
-} from "../../exports/images";
+} from "../../exports/icons";
 
 const Clients = () => {
   return (

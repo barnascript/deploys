@@ -1,6 +1,6 @@
 import styles from "./AboutContent.module.scss";
 import { ClientCard } from "../../exports/components";
-import { mission, vision } from "../../exports/images";
+import { mission, vision } from "../../exports/icons";
 
 const AboutContent = () => {
   return (
@@ -33,14 +33,14 @@ const AboutContent = () => {
       <div className={styles.cards}>
         <div className={styles.card}>
           <ClientCard
-            image={mission}
+            image={vision}
             title="Our Vision"
             text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."
           />
         </div>
         <div className={styles.card}>
           <ClientCard
-            image={vision}
+            image={mission}
             title="Our Mission"
             text="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."
           />

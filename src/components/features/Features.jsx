@@ -5,7 +5,7 @@ import {
   network,
   repository,
   integration,
-} from "../../exports/images";
+} from "../../exports/icons";
 
 const Features = () => {
   return (

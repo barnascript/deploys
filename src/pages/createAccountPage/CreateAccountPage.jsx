@@ -11,7 +11,7 @@ import {
   CompanyComponent,
 } from "../../exports/components";
 import styles from "./CreateAccountPage.module.scss";
-import { contact_logo } from "../../exports/images";
+import { contact_logo } from "../../exports/icons";
 
 const CreateAccountPage = () => {
   return (

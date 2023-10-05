@@ -3,25 +3,7 @@ export { default as jet } from "../assets/images/jet.png";
 export { default as orbit } from "../assets/images/orbit.png";
 export { default as bg } from "../assets/images/bg.png";
 export { default as mobile_bg } from "../assets/images/mobile_bg.png";
-export { default as developers } from "../assets/images/developers.png";
-export { default as ipo } from "../assets/images/ipo.png";
-export { default as teams } from "../assets/images/teams.png";
-export { default as ngo } from "../assets/images/ngo.png";
-export { default as government } from "../assets/images/government.png";
-export { default as startups } from "../assets/images/startups.png";
-export { default as network } from "../assets/images/network.png";
-export { default as repository } from "../assets/images/repository.png";
-export { default as integration } from "../assets/images/integration.png";
-export { default as software } from "../assets/images/software.png";
-export { default as facebook } from "../assets/icons/facebook.svg";
-export { default as instagram } from "../assets/icons/instagram.svg";
-export { default as twitter } from "../assets/icons/twitter.svg";
+
 export { default as about_bg } from "../assets/images/about_bg.png";
-export { default as mission } from "../assets/images/mission.png";
-export { default as vision } from "../assets/images/vision.png";
+
 export { default as contactpage_bg } from "../assets/images/contactpage_bg.png";
-export { default as contact_logo } from "../assets/images/contact_logo.png";
-export { default as observatory } from "../assets/images/observatory.png";
-export { default as astronomy } from "../assets/images/astronomy.png";
-export { default as planet } from "../assets/images/planet.png";
-export { default as round_checkmark } from "../assets/images/round_checkmark.png";

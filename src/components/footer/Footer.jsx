@@ -1,7 +1,6 @@
 import styles from "./Footer.module.scss";
-import footer_logo from "../../assets/images/footer_logo.png";
 import { Link } from "react-router-dom";
-import { facebook, instagram, twitter } from "../../exports/images";
+import { facebook, instagram, twitter, footer_logo } from "../../exports/icons";
 
 const Footer = () => {
   return (
@@ -34,9 +33,17 @@ const Footer = () => {
             <ul className={styles.links}>
               <li className={styles.title}>Social</li>
               <div className={styles.images}>
-                <img src={facebook} alt="facebook" />
-                <img src={instagram} alt="instagram" />
-                <img src={twitter} alt="twitter" />
+                <img
+                  src={facebook}
+                  alt="facebook"
+                  className={styles.facebook}
+                />
+                <img
+                  src={instagram}
+                  alt="instagram"
+                  className={styles.instagram}
+                />
+                <img src={twitter} alt="twitter" className={styles.twitter} />
               </div>
             </ul>
           </div>

@@ -1,8 +1,13 @@
 import styles from "./PriceCard.module.scss";
-import { observatory, round_checkmark } from "../../exports/images";
+import {
+  observatory,
+  earth,
+  astronomy,
+  round_checkmark,
+} from "../../exports/icons";
 import Button from "../button/Button";
 
-const PriceCard = () => {
+const PriceCard = ({ image }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.top}>
@@ -12,7 +17,7 @@ const PriceCard = () => {
             <h2>Free</h2>
             <span className={styles.timeline}>Forever</span>
           </div>
-          <img src={observatory} alt="observatory" />
+          <img src={image} alt="observatory" />
         </div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
