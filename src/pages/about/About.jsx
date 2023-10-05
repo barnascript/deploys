@@ -3,19 +3,21 @@ import {
   AboutContent,
   Contact,
   Footer,
-  NavbarHero,
+  Navbar,
+  Hero,
   Snippet,
 } from "../../exports/components";
 import { about_bg } from "../../exports/images";
+import { logo } from "../../exports/icons";
 
 const About = () => {
   return (
     <div className={styles.wrapper}>
       <div>
-        <NavbarHero
-          bgDesktop={`url(${about_bg})`}
-          bgColor={"var(--persian-blue"}
-          title="We are building the future from the present."
+        <Navbar logo={logo} />
+        <Hero
+          bgImage={`url(${about_bg})`}
+          title="Your full stack of building, managing & deploying tools."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />
       </div>

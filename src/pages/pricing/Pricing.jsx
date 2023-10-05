@@ -1,7 +1,8 @@
 import {
   Contact,
   Footer,
-  NavbarHero,
+  Navbar,
+  Hero,
   PriceCard,
   Snippet,
 } from "../../exports/components";
@@ -11,14 +12,16 @@ import {
   observatory,
   earth,
   astronomy,
+  logo,
   round_checkmark,
 } from "../../exports/icons";
 const Pricing = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.navbar_hero}>
-        <NavbarHero
-          bgDesktop={`url(${about_bg})`}
+        <Navbar logo={logo} />
+        <Hero
+          bgImage={`url(${about_bg})`}
           title="Your full stack of building, managing & deploying tools."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />
