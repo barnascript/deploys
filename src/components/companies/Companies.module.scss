@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 67px;
   width: 100%;
+  padding-bottom: 96px;
 
   .logos {
     display: grid;
@@ -20,9 +21,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 412px) {
   .wrapper {
-    margin-top: -30px;
+    gap: 30px;
     .logos {
       img {
         grid-column: span 6;
@@ -30,7 +31,7 @@
     }
   }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 413px) {
   .wrapper {
     .logos {
       img {
@@ -39,23 +40,12 @@
     }
   }
 }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     .logos {
       grid-gap: 20px;
       img {
         grid-column: span 3;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1001px) {
-  .wrapper {
-    .logos {
-      grid-gap: 20px;
-      img {
-        grid-column: span 2;
       }
     }
   }

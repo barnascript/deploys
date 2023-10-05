@@ -31,7 +31,6 @@ const CreateAccountPage = () => {
           option="Or, Sign up with your email"
           cta2="Already have a Deployn account? Log in"
         />
-
         <div className={styles.form}>
           <div className={styles.names}>
             <div className={styles.fname}>
@@ -51,9 +50,7 @@ const CreateAccountPage = () => {
             <Button text="Sign Up" />
           </div>
         </div>
-
         <AuthOptionsFooter cta2="Already have a Deployn account? Log in" />
-
         <div className={styles.captcha}>
           <Captcha />
         </div>

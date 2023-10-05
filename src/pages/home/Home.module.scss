@@ -2,19 +2,16 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  height: 100vh;
-
-  .navbar_hero {
-    margin-bottom: 150px;
-  }
-  .companies {
-    margin-top: -100px;
-  }
+  width: 100%;
 
   .features {
     background-color: var(--light-blue);
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .clients {
+    margin-top: -50px;
   }
 
   .contact {
@@ -33,13 +30,36 @@
   }
 }
 
-@media screen and (max-width: 484px) {
+@media screen and (max-width: 412px) {
   .wrapper {
-    .navbar_hero {
-      margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100%;
+
+    .features {
+      background-color: var(--light-blue);
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
-    .companies {
+
+    .clients {
+      margin-top: -50px;
+    }
+
+    .contact {
+      background-image: url(../../assets/images/contact_bg.png);
+      background-color: var(--persian-blue);
       margin-top: -100px;
+    }
+
+    .footer {
+      background-color: #181453;
+      margin-top: -100px;
+    }
+    .snippet {
+      margin-top: -100px;
+      background-color: #100d36;
     }
   }
 }

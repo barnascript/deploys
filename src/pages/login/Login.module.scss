@@ -45,11 +45,11 @@
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 412px) {
   .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     width: 100%;
 
     .auth {
@@ -70,7 +70,7 @@
     }
   }
 }
-@media screen and (min-width: 301px) {
+@media screen and (min-width: 413px) {
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -85,27 +85,17 @@
       width: 100%;
       margin: auto;
     }
+
+    .companies {
+      gap: 20px;
+    }
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   .wrapper {
     .auth {
       width: 80%;
-    }
-  }
-}
-@media screen and (min-width: 801px) {
-  .wrapper {
-    .auth {
-      width: 60%;
-    }
-  }
-}
-@media screen and (min-width: 1001px) {
-  .wrapper {
-    .auth {
-      width: 45%;
     }
   }
 }

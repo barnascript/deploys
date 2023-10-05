@@ -8,7 +8,7 @@ import {
   Snippet,
 } from "../../exports/components";
 import styles from "./Home.module.scss";
-import { bg, mobile_bg } from "../../exports/images";
+import { bg } from "../../exports/images";
 
 const Home = () => {
   return (
@@ -26,7 +26,9 @@ const Home = () => {
       <div className={styles.companies}>
         <Companies />
       </div>
-      <Clients />
+      <div className={styles.clients}>
+        <Clients />
+      </div>
       <div className={styles.features}>
         <Features />
       </div>
