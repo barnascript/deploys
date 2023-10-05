@@ -99,12 +99,13 @@
           transform: translateX(-100%);
           transition: all 1s ease-in-out;
 
-          ul {
+          .all_links {
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: flex-start;
             width: 100%;
-            li {
+
+            .mobile_link {
               display: block;
               padding-top: 10px;
               padding-bottom: 10px;
@@ -112,12 +113,10 @@
               padding-left: 20px;
               cursor: pointer;
               width: 100%;
+              color: var(--persian-blue);
 
               &:hover {
                 background-color: var(--semi-light-blue);
-              }
-              a {
-                color: var(--persian-blue);
               }
             }
           }
@@ -150,12 +149,12 @@
           transform: translateX(0%);
           transition: all 0.5s ease-in-out;
 
-          ul {
+          .all_links {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             width: 100%;
-            li {
+            .mobile_link {
               display: block;
               padding-top: 10px;
               padding-bottom: 10px;
@@ -163,6 +162,7 @@
               padding-left: 20px;
               cursor: pointer;
               width: 100%;
+              color: var(--persian-blue);
 
               &:hover {
                 background-color: var(--semi-light-blue);

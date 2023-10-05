@@ -113,23 +113,23 @@ const Navbar = ({
                 : styles.mobile_navigation_shown
             }
           >
-            <ul>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link>Features</Link>
-              </li>
-              <li>
-                <Link>Pricing</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-            </ul>
+            <div className={styles.all_links}>
+              <Link to="/about" className={styles.mobile_link}>
+                About
+              </Link>
+              <Link to="/features" className={styles.mobile_link}>
+                Features
+              </Link>
+              <Link to="/pricing" className={styles.mobile_link}>
+                Pricing
+              </Link>
+              <Link to="/contact" className={styles.mobile_link}>
+                Contact
+              </Link>
+              <Link to="/login" className={styles.mobile_link}>
+                Login
+              </Link>
+            </div>
             <button>Sign up</button>
           </div>
         </div>

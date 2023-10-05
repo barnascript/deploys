@@ -11,13 +11,17 @@ import { about_bg } from "../../exports/images";
 const About = () => {
   return (
     <div className={styles.wrapper}>
-      <NavbarHero
-        bgDesktop={`url(${about_bg})`}
-        bgColor={"var(--persian-blue"}
-        title="We are building the future from the present."
-        text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
-      />
-      <AboutContent />
+      <div>
+        <NavbarHero
+          bgDesktop={`url(${about_bg})`}
+          bgColor={"var(--persian-blue"}
+          title="We are building the future from the present."
+          text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
+        />
+      </div>
+      <div>
+        <AboutContent />
+      </div>
       <Contact />
       <Footer />
       <Snippet />
