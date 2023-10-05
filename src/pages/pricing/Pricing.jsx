@@ -13,12 +13,14 @@ import { about_bg, mobile_bg } from "../../exports/images";
 const Pricing = () => {
   return (
     <div className={styles.wrapper}>
-      <NavbarHero
-        bgDesktop={`url(${about_bg})`}
-        bgMobile={`url(${mobile_bg})`}
-        title="Your full stack of building, managing & deploying tools."
-        text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
-      />
+      <div className={styles.navbar_hero}>
+        <NavbarHero
+          bgDesktop={`url(${about_bg})`}
+          bgMobile={`url(${mobile_bg})`}
+          title="Your full stack of building, managing & deploying tools."
+          text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
+        />
+      </div>
       <div className={`sw ${styles.pricecards}`}>
         <div className={styles.pricecard}>
           <PriceCard />

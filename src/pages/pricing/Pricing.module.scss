@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 100px;
   height: 100vh;
+  background-color: var(--persian-blue);
 
   .hero {
     background-repeat: no-repeat;
@@ -30,6 +31,7 @@
 @media screen and (max-width: 300px) {
   .wrapper {
     gap: 80px;
+
     .pricecards {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
@@ -68,6 +70,7 @@
 @media screen and (min-width: 601px) {
   .wrapper {
     gap: 80px;
+
     .pricecards {
       gap: 27px;
 
