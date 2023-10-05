@@ -16,7 +16,6 @@ const Pricing = () => {
       <div className={styles.navbar_hero}>
         <NavbarHero
           bgDesktop={`url(${about_bg})`}
-          bgMobile={`url(${mobile_bg})`}
           title="Your full stack of building, managing & deploying tools."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />
