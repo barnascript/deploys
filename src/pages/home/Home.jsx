@@ -1,5 +1,4 @@
 import {
-  NavbarHero,
   Companies,
   Clients,
   Features,
@@ -10,7 +9,7 @@ import {
   Hero,
 } from "../../exports/components";
 import styles from "./Home.module.scss";
-import { bg } from "../../exports/images";
+import { desktop_bg, mobile_bg } from "../../exports/images";
 import { logo } from "../../exports/icons";
 
 const Home = () => {
@@ -19,17 +18,11 @@ const Home = () => {
       <div className={styles.navbar_hero}>
         <Navbar logo={logo} />
         <Hero
-          bgImage={`url(${bg})`}
+          desktop_bg={`url(${desktop_bg})`}
+          mobile_bg={`url(${mobile_bg})`}
           title="Build, Manage & Deploy Products – Faster."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />
-        {/* <NavbarHero
-          bgDesktop={`url(${bg})`}
-          title="Build, Manage & Deploy Products – Faster."
-          text="Deployn helps founders, project managers, and developers to build
-          faster, access dev tools, and manage their tech infastructure via
-          one simple integration."
-        /> */}
       </div>
       <div className={styles.companies}>
         <Companies />

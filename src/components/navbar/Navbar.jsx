@@ -109,19 +109,39 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
             }
           >
             <div className={styles.all_links}>
-              <Link to="/about" className={styles.mobile_link}>
+              <Link
+                to="/about"
+                className={styles.mobile_link}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
                 About
               </Link>
-              <Link to="/features" className={styles.mobile_link}>
+              <Link
+                to="/features"
+                className={styles.mobile_link}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
                 Features
               </Link>
-              <Link to="/pricing" className={styles.mobile_link}>
+              <Link
+                to="/pricing"
+                className={styles.mobile_link}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
                 Pricing
               </Link>
-              <Link to="/contact" className={styles.mobile_link}>
+              <Link
+                to="/contact"
+                className={styles.mobile_link}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
                 Contact
               </Link>
-              <Link to="/login" className={styles.mobile_link}>
+              <Link
+                to="/login"
+                className={styles.mobile_link}
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
                 Login
               </Link>
             </div>

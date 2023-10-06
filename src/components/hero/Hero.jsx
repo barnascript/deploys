@@ -1,7 +1,29 @@
 import styles from "./Hero.module.scss";
 import { Input } from "../../exports/components";
+import { useEffect, useState } from "react";
 
-const Hero = ({ bgColor, bgImage, title, text, displayInput }) => {
+const Hero = ({
+  bgColor,
+  title,
+  text,
+  displayInput,
+  mobile_bg,
+  desktop_bg,
+}) => {
+  const [windowWidth, setWindowWith] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWith(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const bgImage = windowWidth <= 500 ? mobile_bg : desktop_bg;
   return (
     <div
       className={styles.wrapper}

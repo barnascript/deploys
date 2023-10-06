@@ -7,7 +7,7 @@ import {
   Hero,
   Snippet,
 } from "../../exports/components";
-import { about_bg } from "../../exports/images";
+import { about_bg, mobile_bg } from "../../exports/images";
 import { logo } from "../../exports/icons";
 
 const About = () => {
@@ -16,7 +16,8 @@ const About = () => {
       <div>
         <Navbar logo={logo} />
         <Hero
-          bgImage={`url(${about_bg})`}
+          desktop_bg={`url(${about_bg})`}
+          mobile_bg={`url${mobile_bg}`}
           title="Your full stack of building, managing & deploying tools."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />
