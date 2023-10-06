@@ -257,13 +257,39 @@
     }
 
     .actions {
-      grid-gap: 20px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
 
       .project,
       .invite,
       .integrate,
       .building {
-        grid-column: span 4;
+        grid-column: span 3;
+      }
+
+      .invite {
+        position: relative;
+        top: 180px;
+        left: -40px;
+      }
+
+      .building {
+        position: relative;
+        top: 100px;
+      }
+    }
+
+    .line {
+      display: flex;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      margin: auto;
+
+      img {
+        width: 85%;
+        margin: auto;
+        transform: rotate(5deg);
       }
     }
 
