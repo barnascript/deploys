@@ -3,7 +3,13 @@ export { default as jet } from "../assets/images/jet.png";
 export { default as orbit } from "../assets/images/orbit.png";
 export { default as desktop_bg } from "../assets/images/desktop_bg.png";
 export { default as mobile_bg } from "../assets/images/mobile_bg.png";
-
 export { default as about_bg } from "../assets/images/about_bg.png";
-
 export { default as contactpage_bg } from "../assets/images/contactpage_bg.png";
+export { default as features } from "../assets/images/features.png";
+export { default as feature_img } from "../assets/images/feature_img.png";
+export { default as line } from "../assets/images/line.png";
+export { default as tasks } from "../assets/images/tasks.png";
+export { default as manage } from "../assets/images/manage.png";
+export { default as repo_management } from "../assets/images/repo_management.png";
+export { default as server } from "../assets/images/server.png";
+export { default as featured_mobile_bg } from "../assets/images/featured_mobile_bg.png";

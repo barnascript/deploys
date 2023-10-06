@@ -5,6 +5,7 @@ import {
   CreateAccountPage,
   Login,
   Pricing,
+  FeaturesPage,
 } from "./exports/pages";
 import { Routes, Route } from "react-router-dom";
 
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/signup" element={<CreateAccountPage />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/pricing" element={<Pricing />} />
+        <Route exact path="/features" element={<FeaturesPage />} />
       </Routes>
     </div>
   );

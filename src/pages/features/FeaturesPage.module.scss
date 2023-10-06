@@ -1,0 +1,291 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+
+  .hero {
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .hero_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      margin: auto;
+      inset: 0;
+      position: relative;
+      top: -350px;
+      width: 100%;
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+
+  .subheading {
+    margin-top: -150px;
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    .project,
+    .invite,
+    .integrate,
+    .building {
+      grid-column: span 3;
+    }
+
+    .invite {
+      position: relative;
+      top: 180px;
+      left: -50px;
+    }
+
+    .building {
+      position: relative;
+      top: 100px;
+    }
+  }
+
+  .line {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    margin: auto;
+
+    img {
+      width: 85%;
+      margin: auto;
+      transform: rotate(5deg);
+    }
+  }
+
+  .cards {
+    background-color: #f4f7fa;
+    padding-top: 172px;
+    padding-bottom: 150px;
+    width: 100%;
+    .whatwedo {
+      max-width: 700px;
+      margin: auto;
+      display: grid;
+      grid-gap: 136px;
+    }
+  }
+
+  .feature_cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+    width: 80%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    .feature_card {
+      grid-column: span 4;
+    }
+  }
+
+  .contact,
+  .snippet,
+  .footer {
+    width: 100%;
+  }
+
+  .snippet,
+  .footer {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .wrapper {
+    .hero {
+      .hero_img {
+        top: -280px;
+      }
+    }
+
+    .subheading {
+      margin-top: -250px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 20px;
+
+      .project,
+      .invite,
+      .integrate,
+      .building {
+        grid-column: span 12;
+      }
+
+      .invite {
+        position: static;
+      }
+
+      .building {
+        position: static;
+      }
+    }
+
+    .line {
+      display: none;
+    }
+
+    .cards {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 100%;
+      .whatwedo {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 70px;
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+
+    .feature_cards {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 15px;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 100px;
+      .feature_card {
+        grid-column: span 12;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 413px) {
+  .wrapper {
+    .hero {
+      .hero_img {
+        top: -280px;
+      }
+    }
+
+    .subheading {
+      margin-top: -250px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 10px;
+
+      .project,
+      .invite,
+      .integrate,
+      .building {
+        grid-column: span 6;
+      }
+
+      .invite {
+        position: static;
+      }
+
+      .building {
+        position: static;
+      }
+    }
+
+    .line {
+      display: none;
+    }
+
+    .cards {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 100%;
+      .whatwedo {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 80px;
+
+        div {
+          width: 100%;
+        }
+      }
+    }
+
+    .feature_cards {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 15px;
+      width: 100%;
+      padding-top: 0px;
+      padding-bottom: 100px;
+      .feature_card {
+        grid-column: span 6;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    .hero {
+      .hero_img {
+        img {
+          width: 70%;
+        }
+      }
+    }
+
+    .actions {
+      grid-gap: 20px;
+
+      .project,
+      .invite,
+      .integrate,
+      .building {
+        grid-column: span 4;
+      }
+    }
+
+    .cards {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      width: 100%;
+      .whatwedo {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-gap: 40px;
+      }
+    }
+
+    .feature_cards {
+      grid-gap: 20px;
+      width: 90%;
+
+      .feature_card {
+        grid-column: span 4;
+      }
+    }
+  }
+}

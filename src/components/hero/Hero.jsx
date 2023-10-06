@@ -9,6 +9,8 @@ const Hero = ({
   displayInput,
   mobile_bg,
   desktop_bg,
+  color,
+  visibility,
 }) => {
   const [windowWidth, setWindowWith] = useState(window.innerWidth);
 
@@ -31,10 +33,10 @@ const Hero = ({
     >
       <div className={`sw ${styles.container}`}>
         <div className={styles.hero_text}>
-          <h1>{title}</h1>
-          <p>{text}</p>
+          <h1 style={{ color: color }}>{title}</h1>
+          <p style={{ color: color }}>{text}</p>
         </div>
-        <div style={{ display: displayInput }}>
+        <div style={{ display: displayInput, visibility: visibility }}>
           <Input />
         </div>
       </div>

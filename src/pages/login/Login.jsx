@@ -21,6 +21,9 @@ const Login = () => {
           linkColor="black"
           MobileBgColor="white"
           DesktopBgColor="white"
+          propLinkColor="black"
+          hamburgerColor="black"
+          originalLinkColor="black"
         />
       </div>
       <div className={styles.auth}>

@@ -5,11 +5,19 @@ import { LiaTimesSolid } from "react-icons/lia";
 import { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
+const Navbar = ({
+  logo,
+  hamburgerColor,
+  MobileBgColor,
+  DesktopBgColor,
+  propLinkColor,
+  originalLinkColor,
+}) => {
   const [toggleMenu, setToggleMenu] = useState(true);
   const [bgColor, setBgColor] = useState();
   const [logoColor, setLogoColor] = useState();
-  const [linkColor, setLinkColor] = useState();
+  const [linkColor, setLinkColor] = useState(originalLinkColor);
+  const [boxShadow, setBoxShadow] = useState();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,10 +26,16 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
         window.scrollY > 50
           ? "brightness(0) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)"
           : "brightness(100%) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)";
-      const changeLinkColor = window.scrollY > 50 ? "black" : "white";
+      const changeLinkColor =
+        window.scrollY > 50 ? propLinkColor : originalLinkColor;
+      const changeBoxShadow =
+        window.scrollY > 50
+          ? "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px"
+          : null;
       setBgColor(backgroundColor);
       setLogoColor(changeLogoColor);
       setLinkColor(changeLinkColor);
+      setBoxShadow(changeBoxShadow);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,12 +43,12 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [bgColor, logoColor]);
+  }, [propLinkColor, originalLinkColor]);
 
   return (
     <div
       className={styles.wrapper_container}
-      style={{ backgroundColor: bgColor }}
+      style={{ backgroundColor: bgColor, boxShadow: boxShadow }}
     >
       <div className={`sw ${styles.wrapper}`}>
         <div className={styles.desktop_container}>
@@ -58,7 +72,9 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
                 </Link>
               </li>
               <li>
-                <Link style={{ color: linkColor }}>Features</Link>
+                <Link to="/features" style={{ color: linkColor }}>
+                  Features
+                </Link>
               </li>
               <li>
                 <Link to="/pricing" style={{ color: linkColor }}>
@@ -91,14 +107,14 @@ const Navbar = ({ logo, hamburgerColor, MobileBgColor, DesktopBgColor }) => {
               alt="hamburger_menu"
               className={styles.hamburger}
               onClick={() => setToggleMenu(!toggleMenu)}
-              style={{ color: linkColor }}
+              style={{ color: hamburgerColor }}
             />
           )}
           {!toggleMenu && (
             <LiaTimesSolid
               className={styles.close_hamburger}
               onClick={() => setToggleMenu(!toggleMenu)}
-              style={{ color: linkColor }}
+              style={{ color: hamburgerColor }}
             />
           )}
           <div

@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.navbar_hero}>
-        <Navbar logo={logo} />
+        <Navbar logo={logo} propLinkColor="black" originalLinkColor="white" />
         <Hero
           desktop_bg={`url(${desktop_bg})`}
           mobile_bg={`url(${mobile_bg})`}

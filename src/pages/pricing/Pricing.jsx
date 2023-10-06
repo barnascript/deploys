@@ -19,7 +19,7 @@ const Pricing = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.navbar_hero}>
-        <Navbar logo={logo} />
+        <Navbar logo={logo} propLinkColor="black" originalLinkColor="white" />
         <div className={styles.hero}>
           <Hero
             desktop_bg={`url(${about_bg})`}

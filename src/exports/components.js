@@ -25,3 +25,7 @@ export { default as PasswordInput } from "../components/passwordInput/PasswordIn
 export { default as Button } from "../components/button/Button";
 export { default as AuthOptionsFooter } from "../components/authOptionsFooter/AuthOptionsFooter";
 export { default as PriceCard } from "../components/priceCard/PriceCard";
+export { default as Actions } from "../components/actions/Actions";
+export { default as WhatWeDo } from "../components/whatWeDo/WhatWeDo";
+export { default as WhatWeDoReverse } from "../components/whatWeDoReverse/WhatWeDoReverse";
+export { default as FeaturesCard } from "../components/featuresCard/FeaturesCard";

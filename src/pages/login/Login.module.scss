@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 150px;
   height: 100vh;
+  width: 100%;
 
   .auth {
     display: flex;
@@ -10,14 +11,19 @@
     flex-direction: column;
     justify-content: center;
     gap: 31px;
-    width: 45%;
+    max-width: 600px;
     margin: auto;
 
     .form {
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 20px;
       width: 100%;
+
+      div {
+        width: 100%;
+      }
 
       .forgot_password {
         padding-left: 20px;
@@ -57,7 +63,7 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
+      max-width: 100%;
       margin: auto;
     }
     .companies {
@@ -82,7 +88,7 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      width: 70%;
+      max-width: 600px;
       margin: auto;
     }
 
@@ -95,7 +101,7 @@
 @media screen and (min-width: 858px) {
   .wrapper {
     .auth {
-      width: 45%;
+      max-width: 600px;
     }
   }
 }

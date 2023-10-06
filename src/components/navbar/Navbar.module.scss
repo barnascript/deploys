@@ -23,13 +23,12 @@
         ul {
           display: flex;
           gap: 42px;
+
           li {
             a {
-              color: white;
-            }
-
-            .activeLinkColor {
-              background-color: red;
+              &:hover {
+                opacity: 0.7;
+              }
             }
           }
         }

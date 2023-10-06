@@ -22,6 +22,9 @@ const CreateAccountPage = () => {
           linkColor="black"
           MobileBgColor="white"
           DesktopBgColor="white"
+          propLinkColor="#000000"
+          hamburgerColor="#000"
+          originalLinkColor="black"
         />
       </div>
       <div className={styles.auth}>

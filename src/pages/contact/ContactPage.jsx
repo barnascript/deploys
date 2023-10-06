@@ -9,6 +9,8 @@ const Contact = () => {
         logo={contact_logo}
         hamburgerColor={"#000000"}
         MobileBgColor="white"
+        propLinkColor="black"
+        originalLinkColor="white"
       />
       <div className={styles.form}>
         <Form />
