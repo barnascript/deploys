@@ -22,11 +22,12 @@
     position: relative;
     z-index: 1;
     width: 45%;
+    padding-top: 100px;
 
     .hero_text {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 20px;
       max-width: 60%;
 
       h1,
@@ -44,7 +45,7 @@
 
 @media screen and (max-width: 412px) {
   .wrapper {
-    padding-top: 140px;
+    padding-top: 100px;
 
     .container {
       display: flex;
@@ -66,7 +67,26 @@
 }
 @media screen and (min-width: 413px) {
   .wrapper {
-    padding-top: 180px;
+    padding-top: 100px;
+    .container {
+      width: 100%;
+      .hero_text {
+        max-width: 100%;
+        h1 {
+          font-size: 2.5rem;
+          line-height: 50px;
+        }
+        p {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .wrapper {
+    padding-top: 50px;
     .container {
       width: 90%;
       .hero_text {
@@ -85,7 +105,7 @@
 
 @media screen and (min-width: 613px) {
   .wrapper {
-    padding-top: 100px;
+    padding-top: 20px;
     .container {
       width: 80%;
       .hero_text {
@@ -102,17 +122,17 @@
   }
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 801px) {
   .wrapper {
     .container {
-      width: 60%;
+      width: 70%;
     }
   }
 }
 @media screen and (min-width: 1001px) {
   .wrapper {
     .container {
-      width: 50%;
+      width: 55%;
     }
   }
 }

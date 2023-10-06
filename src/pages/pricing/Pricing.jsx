@@ -20,12 +20,15 @@ const Pricing = () => {
     <div className={styles.wrapper}>
       <div className={styles.navbar_hero}>
         <Navbar logo={logo} />
-        <Hero
-          desktop_bg={`url(${about_bg})`}
-          mobile_bg={`url${mobile_bg}`}
-          title="Your full stack of building, managing & deploying tools."
-          text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
-        />
+        <div className={styles.hero}>
+          <Hero
+            desktop_bg={`url(${about_bg})`}
+            mobile_bg={`url${mobile_bg}`}
+            title="Your full stack of building, managing & deploying tools."
+            text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
+            displayInput="none"
+          />
+        </div>
       </div>
       <div className={`sw ${styles.pricecards}`}>
         <div className={styles.pricecard}>
