@@ -18,6 +18,7 @@ const About = () => {
         <Hero
           desktop_bg={`url(${about_bg})`}
           mobile_bg={`url${mobile_bg}`}
+          bgColor={"var(--persian-blue)"}
           title="Your full stack of building, managing & deploying tools."
           text="Deployn helps founders, project managers, and developers to build faster, access dev tools, and manage their tech infastructure via one simple integration."
         />

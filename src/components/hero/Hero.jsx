@@ -29,7 +29,10 @@ const Hero = ({
   return (
     <div
       className={styles.wrapper}
-      style={{ background: bgColor, backgroundImage: bgImage }}
+      style={{
+        background: bgColor,
+        backgroundImage: bgImage ?? bgColor,
+      }}
     >
       <div className={`sw ${styles.container}`}>
         <div className={styles.hero_text}>
