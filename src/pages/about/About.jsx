@@ -14,7 +14,12 @@ const About = () => {
   return (
     <div className={styles.wrapper}>
       <div>
-        <Navbar logo={logo} propLinkColor="black" originalLinkColor="white" />
+        <Navbar
+          logo={logo}
+          propLinkColor="black"
+          originalLinkColor="white"
+          MobileBgColor="var(--persian-blue)"
+        />
         <Hero
           desktop_bg={`url(${about_bg})`}
           mobile_bg={`url${mobile_bg}`}

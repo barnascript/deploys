@@ -69,6 +69,7 @@
         height: inherit;
         position: relative;
         z-index: 999;
+
         .logo {
           width: 8rem;
           cursor: pointer;
@@ -83,7 +84,7 @@
         .close_hamburger {
           transform: scale(1.8);
           position: absolute;
-          right: 0px;
+          right: 20px;
         }
 
         .mobile_navigation_hid {

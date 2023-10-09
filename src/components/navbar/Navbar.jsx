@@ -50,8 +50,8 @@ const Navbar = ({
       className={styles.wrapper_container}
       style={{ backgroundColor: bgColor, boxShadow: boxShadow }}
     >
-      <div className={`sw ${styles.wrapper}`}>
-        <div className={styles.desktop_container}>
+      <div className={` ${styles.wrapper}`}>
+        <div className={`sw ${styles.desktop_container}`}>
           <Link to="/">
             <div>
               <img
@@ -97,7 +97,10 @@ const Navbar = ({
             </Link>
           </div>
         </div>
-        <div className={styles.mobile_container}>
+        <div
+          className={`sw ${styles.mobile_container}`}
+          style={{ backgroundColor: MobileBgColor }}
+        >
           <Link to="/">
             <img src={logo} alt="logo" className={styles.logo} />
           </Link>
