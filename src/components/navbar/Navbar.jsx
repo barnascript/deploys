@@ -7,24 +7,30 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = ({
   logo,
-  hamburgerColor,
+  scrolledHamburgerColor,
+  unscrolledHamburgerColor,
   MobileBgColor,
   DesktopBgColor,
   propLinkColor,
   originalLinkColor,
+  mobileHamburgerColor,
+  scrolledLogoColor,
 }) => {
   const [toggleMenu, setToggleMenu] = useState(true);
   const [bgColor, setBgColor] = useState();
-  const [logoColor, setLogoColor] = useState();
+  const [logoColor, setLogoColor] = useState("white");
   const [linkColor, setLinkColor] = useState(originalLinkColor);
   const [boxShadow, setBoxShadow] = useState();
+  const [hamburgerColor, setHamburgerColor] = useState("white");
 
   useEffect(() => {
     const handleScroll = () => {
       const backgroundColor = window.scrollY > 50 ? "white" : "transparent";
+      const hamburgerIconColor =
+        window.scrollY > 50 ? scrolledHamburgerColor : unscrolledHamburgerColor;
       const changeLogoColor =
         window.scrollY > 50
-          ? "brightness(0) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)"
+          ? scrolledLogoColor
           : "brightness(100%) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)";
       const changeLinkColor =
         window.scrollY > 50 ? propLinkColor : originalLinkColor;
@@ -36,6 +42,7 @@ const Navbar = ({
       setLogoColor(changeLogoColor);
       setLinkColor(changeLinkColor);
       setBoxShadow(changeBoxShadow);
+      setHamburgerColor(hamburgerIconColor);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,7 +50,14 @@ const Navbar = ({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [propLinkColor, originalLinkColor]);
+  }, [
+    propLinkColor,
+    originalLinkColor,
+    mobileHamburgerColor,
+    unscrolledHamburgerColor,
+    scrolledHamburgerColor,
+    scrolledLogoColor,
+  ]);
 
   return (
     <div
@@ -102,7 +116,12 @@ const Navbar = ({
           style={{ backgroundColor: MobileBgColor }}
         >
           <Link to="/">
-            <img src={logo} alt="logo" className={styles.logo} />
+            <img
+              src={logo}
+              alt="logo"
+              className={styles.logo}
+              style={{ filter: logoColor }}
+            />
           </Link>
           {toggleMenu && (
             <RxHamburgerMenu

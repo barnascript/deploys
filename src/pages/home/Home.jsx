@@ -16,7 +16,15 @@ const Home = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.navbar_hero}>
-        <Navbar logo={logo} propLinkColor="black" originalLinkColor="white" />
+        <Navbar
+          logo={logo}
+          propLinkColor="black"
+          originalLinkColor="white"
+          mobileHamburgerColor="black"
+          scrolledHamburgerColor="black"
+          unscrolledHamburgerColor="white"
+          scrolledLogoColor="brightness(0) saturate(100%) hue-rotate(0deg) sepia(100%) grayscale(0%) invert(0%)"
+        />
         <Hero
           desktop_bg={`url(${desktop_bg})`}
           mobile_bg={`url(${mobile_bg})`}
